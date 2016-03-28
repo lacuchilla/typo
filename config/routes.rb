@@ -113,7 +113,7 @@ Rails.application.routes.draw do
   end
 
   # default
-  root :to  => 'articles#index', :format => false
+  root :to  => 'articles#index', :format => true
 
   match '*from', :to => 'articles#redirect', :format => false
 end
