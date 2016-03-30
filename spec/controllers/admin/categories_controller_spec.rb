@@ -23,7 +23,6 @@ describe Admin::CategoriesController do
     end
   end
 
-
   describe "test_edit" do
     before(:each) do
       get :edit, :id => Factory(:category).id
