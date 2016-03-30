@@ -11,3 +11,13 @@ Feature: Manage Categories
     Given I am on the admin dashboard page
     When I click on the categories link
     Then I should see the categories new or edit page
+
+  Scenario: Successfully render the new categories page after a new category has been created
+    Given I am on the admin dashboard page
+    When I click on the save button
+    Then I should see the categories new or edit page
+
+  Scenario: Successfully render the new categories page after a category has been edited
+    Given I am on the admin dashboard page
+    When I click on the save button
+    Then I should see the categories new or edit page

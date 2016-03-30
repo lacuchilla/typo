@@ -16,5 +16,9 @@ When /^I click on the categories link$/ do
 end
 
 Then /^I should see the categories new or edit page$/ do
-    save_and_open_page
+  self.save_and_open_page
+end
+
+When /^I click on the save button$/ do
+  self.save_and_open_page
 end
