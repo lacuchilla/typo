@@ -21,6 +21,11 @@ describe Admin::CategoriesController do
       get :new
       expect(subject).to render_template :new
     end
+
+    it "should return a success status" do
+      get :new
+      expect(response.status).to eq 200
+    end
   end
 
   describe "test_edit" do
