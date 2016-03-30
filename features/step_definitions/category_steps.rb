@@ -15,6 +15,6 @@ When /^I click on the categories link$/ do
   click_link(new_admin_categories_path)
 end
 
-Then /^I should see the categories index page$/ do
+Then /^I should see the categories new or edit page$/ do
   visit cate
 end
