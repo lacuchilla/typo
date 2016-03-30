@@ -8,6 +8,6 @@ Feature: Manage Categories
     And I am logged into the admin panel
 
   Scenario: Successfully view categories page
-    Given I am on the admin index page
+    Given I am on the admin dashboard page
     When I click on the categories link
-    Then I should see the categories index page
+    Then I should see the categories new or edit page

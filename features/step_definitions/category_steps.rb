@@ -12,9 +12,9 @@ World(WithinHelpers)
 
 
 When /^I click on the categories link$/ do
-  click_link(new_admin_categories_path)
+  visit '/admin/categories/new'
 end
 
 Then /^I should see the categories new or edit page$/ do
-  visit cate
+    save_and_open_page
 end
